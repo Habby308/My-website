@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABBY | Music</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px;
+      background: #111;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .music {
+      padding: 40px 20px;
+    }
+
+    .song {
+      background: #171717;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    .song h2 {
+      margin-top: 0;
+    }
+
+    .song button {
+      background: white;
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .song button:hover {
+      background: #ccc;
+    }
+
+    footer {
+      padding: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>HABBY</h1>
+    <p>Artist • Singer • Songwriter</p>
+  </header>
+
+  <section class="music">
+    <h2>My Music 🎵</h2>
+
+    <div class="song">
+      <h2>In The Room</h2>
+      <p>Listen to my latest music.</p>
+      <button onclick="playSong()">▶ Play</button>
+    </div>
+
+    <div class="song">
+      <h2>Call Me When You Need It</h2>
+      <p>More music from HABBY.</p>
+      <button onclick="playSong()">▶ Play</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 HABBY. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function playSong() {
+      alert("Music player coming soon 🎵");
+    }
+  </script>
+
+</body>
+</html>
