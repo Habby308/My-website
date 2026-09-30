@@ -3,101 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HABBY | Music</title>
+
+  <title>HABBY | Official Website</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0a0a0a;
+      background: #080808;
       color: white;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      padding: 30px;
+      background: linear-gradient(180deg, #151515, #080808);
     }
 
-    header {
-      padding: 50px 20px;
-      background: #111;
+    .hero h1 {
+      font-size: 70px;
+      margin: 0;
+      letter-spacing: 5px;
     }
 
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
-
-    header p {
+    .hero p {
       color: #aaa;
       font-size: 18px;
+      margin: 15px 0 30px;
     }
 
-    .music {
-      padding: 40px 20px;
-    }
-
-    .song {
-      background: #171717;
-      max-width: 500px;
-      margin: 20px auto;
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .song h2 {
-      margin-top: 0;
-    }
-
-    .song button {
+    .button {
+      display: inline-block;
+      padding: 14px 30px;
       background: white;
       color: black;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 25px;
-      cursor: pointer;
+      text-decoration: none;
+      border-radius: 30px;
       font-weight: bold;
     }
 
-    .song button:hover {
-      background: #ccc;
+    .music {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .music h2 {
+      font-size: 35px;
+    }
+
+    .song {
+      max-width: 500px;
+      margin: 25px auto;
+      padding: 25px;
+      background: #151515;
+      border-radius: 18px;
+    }
+
+    .song h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .song p {
+      color: #999;
+    }
+
+    .socials {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111;
+    }
+
+    .socials a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
     }
 
     footer {
-      padding: 30px;
-      color: #777;
+      text-align: center;
+      padding: 25px;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
+  <section class="hero">
     <h1>HABBY</h1>
-    <p>Artist • Singer • Songwriter</p>
-  </header>
 
-  <section class="music">
+    <p>Artist • Singer • Songwriter</p>
+
+    <a href="#music" class="button">LISTEN NOW</a>
+  </section>
+
+
+  <section class="music" id="music">
+
     <h2>My Music 🎵</h2>
 
     <div class="song">
-      <h2>In The Room</h2>
-      <p>Listen to my latest music.</p>
-      <button onclick="playSong()">▶ Play</button>
+      <h3>In The Room</h3>
+      <p>HABBY</p>
+      <a href="#" class="button">PLAY</a>
     </div>
 
     <div class="song">
-      <h2>Call Me When You Need It</h2>
-      <p>More music from HABBY.</p>
-      <button onclick="playSong()">▶ Play</button>
+      <h3>Call Me When You Need It</h3>
+      <p>HABBY</p>
+      <a href="#" class="button">PLAY</a>
     </div>
+
   </section>
 
-  <footer>
-    <p>© 2026 HABBY. All rights reserved.</p>
-  </footer>
 
-  <script>
-    function playSong() {
-      alert("Music player coming soon 🎵");
-    }
-  </script>
+  <section class="socials">
+
+    <h2>Follow HABBY</h2>
+
+    <br>
+
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
+    <a href="#">Audiomack</a>
+
+  </section>
+
+
+  <footer>
+    © 2026 HABBY. All rights reserved.
+  </footer>
 
 </body>
 </html>
